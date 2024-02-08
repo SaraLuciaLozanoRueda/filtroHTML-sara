@@ -386,5 +386,6 @@ button{
 
 Este es el CSS que use para la pagina principal. 
 
-En este código use un redireccionamiento para navegar entre las diferentes categorías y tener una  descripción de cada producto. Además use algunos arreglos para la letra, su tamaño,forma y posicionamiento y para la gran mayoría de bordes e imágenes use un border-radius para restar un poco  su figura cuadriculada, un width para darle un tamaño a cada section,div y a los links del dash le quite su decoración para que se vea mas bonio.
+En este código use un redireccionamiento para navegar entre las diferentes categorías y tener una  descripción de cada producto. Además use algunos arreglos para la letra, su tamaño,forma y posicionamiento y para la gran mayoría de bordes e imágenes use un border-radius para restar un poco  su figura cuadriculada, un width para darle un tamaño a cada section,div y a los links del dash le quite su decoración para que se vea mas bonito.
 
+SE VE MAS BONITO EN FIREFOX
