@@ -1,4 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+# FILTRO HTML
+
+Este archivo tiene como finalidad ser la pagina online de la tienda "CampusShop" en ella encontramos catálogos de ropa como abrigos,pantalones y camisetas.
+
+```
+.secundario {
+    display: grid;
+    grid-template: 100%/20% 30% 50%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.laterales {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.laterales img {
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    opacity: .8;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.prime {
+    margin-left: 30px;
+}
+
+.fop {
+    border-radius: 20px;
+    width: 200px;
+    transition: .5s ease-in-out;
+    margin-left: 20px;
+}
+.fop:hover{
+    scale: 1.1;
+    opacity: 0.5;
+}
+.descripcion {
+    margin-left: 50px;
+    width: 1000px;
+}
+
+button {
+    width: 100px;
+    background-color: green;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: lightgreen;
+}
+/*RESPONSIVE*/
+@media (max-width:768px) {
+    .secundario {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotos {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .laterales img {
+        height: 100px;
+        width: 150px;
+        border-radius: 20px;
+        opacity: .8;
+    }
+
+    .laterales {
+        border-radius: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .prime {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .fop {
+        border-radius: 20px;
+        height: 300px;
+        width: 200px;
+        transition: ease-in-out(.5s)
+    }
+    .fop:hover{
+        scale: 1.1;
+        opacity: 0.5;
+    }
+    .descripcion {
+        padding: 15px;
+        margin-left: 50px;
+        width: 340px;
+    }
+}
+```
+
+en las líneas anteriores  definí el estilo para cada uno de los productos, conecte todos los productos al CSS secundariou. Además, hice uso del grid y el flex para organizar la información. En los responsives jugué con los margin y padding para crear una pagina mas estética.
+
+Use una paleta monocromática para que no se pierda la esencia de los productos, cuando te pones sobre una imagen ella te da un efecto de movimiento.
+
+```
 
 * {
     box-sizing: border-box;
@@ -266,3 +382,9 @@ button{
     }
 
 }
+```
+
+Este es el CSS que use para la pagina principal. 
+
+En este código use un redireccionamiento para navegar entre las diferentes categorías y tener una  descripción de cada producto. Además use algunos arreglos para la letra, su tamaño,forma y posicionamiento y para la gran mayoría de bordes e imágenes use un border-radius para restar un poco  su figura cuadriculada, un width para darle un tamaño a cada section,div y a los links del dash le quite su decoración para que se vea mas bonio.
+
